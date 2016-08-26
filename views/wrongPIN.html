@@ -1,0 +1,57 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="https://media.licdn.com/media/p/3/005/08e/155/11ba9e0.png" class="img-responsive">
+                        <h1 class="text-center text-muted">You entered the wrong PIN number</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-block btn-lg btn-primary" id="goBack" onclick="myFunction()">Go Back<i class="fa fa-fw fa-angle-left"></i></button>
+						
+						<script language="javascript">
+							function myFunction()
+							{
+								window.history.back(-1);
+							}
+						</script>
+<!-- 						<script>
+						var getQueryString = function ( field, url ) {
+							var href = url ? url : window.location.href;
+							var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+							var string = reg.exec(href);
+							return string ? string[1] : null;
+							};
+						
+						function myFunction() {
+							var requestedUrl = req.protocol + '://' + req.hostname + ':3000' + req.url;
+							var phoneNumber = getQueryString('number', requestedUrl); 
+						    alert("back");
+							window.history.back(-1);
+						}				
+						</script> -->
+					
+					</div>
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+</html>

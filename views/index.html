@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+		<title>Door Unlock</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/scripts.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <!-- <script type="text/javascript">
+		
+
+		</script> -->
+    </head>
+	<body>		
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://media.licdn.com/media/p/3/005/08e/155/11ba9e0.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<!-- <h1 id="nameHeader" class="text-primary text-center">Welcome... </h1> -->
+		<script src="https://cdn.socket.io/socket.io-1.4.8.js"></script>
+		<script>
+			var socket = io();
+			
+			socket.on('connect', function(data){
+				
+			});
+			
+			socket.on('disconnect', function(){
+				
+			});
+			
+			socket.on('message', function(message) {
+				//alert('The server has a message for you: ' + message);
+				 //message('System', message);
+
+			});
+			
+	
+			
+		</script>	
+		
+        <div class="section"><div class="container"><div class="row"><div class="col-md-12"></div></div></div></div>
+		<div class="section">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group has-feedback">
+                                <div class="col-sm-2">
+                                    <label for="phonenumber" class="control-label">Verification Pin
+                                        <br>
+                                    </label>
+                                </div>
+                                <div class="col-sm-10">
+                                    <input type="tel" class="form-control input-lg" id="phonenumber" placeholder="PIN">
+                                    <script>
+                                       //var PINnumber = document.getElementById("phonenumber").value;
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="button" class="btn btn-block btn-lg btn-primary" onclick="window.location.href='/buttonPage?number=' + phonenumber.value">Verify
+                                        <i class="fa fa-fw fa-sign-in">
+                                            <br>
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+	</body>
+</html>
